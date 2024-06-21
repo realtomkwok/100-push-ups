@@ -14,6 +14,12 @@ struct OnboardingNavigator: View {
 		VStack {
 			if currentSetupStep == 0 {
 				WelcomeView(currentSetupStep: $currentSetupStep)
+					.transition(.blurReplace(.upUp)
+						.animation(.smooth(duration: 0.6)))
+			} else if currentSetupStep == 1 {
+				SetUpProfileView(currentSetupStep: $currentSetupStep)
+					.transition(.blurReplace(.upUp)
+						.animation(.smooth(duration: 0.6)))
 			}
 		}
     }

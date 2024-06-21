@@ -7,18 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1851EB2B2C244EC300182643 /* _00_PushupsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851EB2A2C244EC300182643 /* _00_PushupsApp.swift */; };
+		1851EB2B2C244EC300182643 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851EB2A2C244EC300182643 /* App.swift */; };
 		1851EB2D2C244EC300182643 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851EB2C2C244EC300182643 /* ContentView.swift */; };
 		1851EB2F2C244EC400182643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1851EB2E2C244EC400182643 /* Assets.xcassets */; };
 		1851EB322C244EC400182643 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1851EB312C244EC400182643 /* Preview Assets.xcassets */; };
+		1851EB3C2C244F9300182643 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1851EB3B2C244F9300182643 /* CoreMotion.framework */; };
+		1851EB422C252B5D00182643 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851EB412C252B5D00182643 /* WelcomeView.swift */; };
+		1851EB442C252B7C00182643 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851EB432C252B7C00182643 /* HomeView.swift */; };
+		1851EB472C252C6F00182643 /* OnboardingNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851EB462C252C6F00182643 /* OnboardingNavigator.swift */; };
+		18FE25C32C257194008D02AB /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25C22C257194008D02AB /* Animation.swift */; };
+		18FE25C52C257A44008D02AB /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25C42C257A44008D02AB /* ChatBubble.swift */; };
+		18FE25C72C258AF7008D02AB /* SetUpProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25C62C258AF7008D02AB /* SetUpProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1851EB272C244EC300182643 /* 100 Pushups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "100 Pushups.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1851EB2A2C244EC300182643 /* _00_PushupsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _00_PushupsApp.swift; sourceTree = "<group>"; };
+		1851EB2A2C244EC300182643 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		1851EB2C2C244EC300182643 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1851EB2E2C244EC400182643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1851EB312C244EC400182643 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1851EB382C244ED700182643 /* 100 Pushups.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "100 Pushups.entitlements"; sourceTree = "<group>"; };
+		1851EB392C244EEC00182643 /* -00-Pushups-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-00-Pushups-Info.plist"; sourceTree = SOURCE_ROOT; };
+		1851EB3B2C244F9300182643 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1851EB412C252B5D00182643 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		1851EB432C252B7C00182643 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1851EB462C252C6F00182643 /* OnboardingNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigator.swift; sourceTree = "<group>"; };
+		18FE25C22C257194008D02AB /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		18FE25C42C257A44008D02AB /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		18FE25C62C258AF7008D02AB /* SetUpProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1851EB3C2C244F9300182643 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +54,7 @@
 			children = (
 				1851EB292C244EC300182643 /* 100 Pushups */,
 				1851EB282C244EC300182643 /* Products */,
+				1851EB3A2C244F9300182643 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +69,14 @@
 		1851EB292C244EC300182643 /* 100 Pushups */ = {
 			isa = PBXGroup;
 			children = (
-				1851EB2A2C244EC300182643 /* _00_PushupsApp.swift */,
+				18FE25C12C257184008D02AB /* Extension */,
+				1851EB2A2C244EC300182643 /* App.swift */,
 				1851EB2C2C244EC300182643 /* ContentView.swift */,
+				1851EB452C252C4900182643 /* Navigation */,
+				1851EB3F2C252B1000182643 /* Screens */,
+				1851EB3D2C252B0100182643 /* Components */,
+				1851EB392C244EEC00182643 /* -00-Pushups-Info.plist */,
+				1851EB382C244ED700182643 /* 100 Pushups.entitlements */,
 				1851EB2E2C244EC400182643 /* Assets.xcassets */,
 				1851EB302C244EC400182643 /* Preview Content */,
 			);
@@ -65,6 +89,64 @@
 				1851EB312C244EC400182643 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1851EB3A2C244F9300182643 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1851EB3B2C244F9300182643 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1851EB3D2C252B0100182643 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1851EB3E2C252B0800182643 /* Common */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1851EB3E2C252B0800182643 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				18FE25C42C257A44008D02AB /* ChatBubble.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1851EB3F2C252B1000182643 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1851EB402C252B1C00182643 /* Onboarding */,
+				1851EB432C252B7C00182643 /* HomeView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1851EB402C252B1C00182643 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1851EB412C252B5D00182643 /* WelcomeView.swift */,
+				18FE25C62C258AF7008D02AB /* SetUpProfileView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1851EB452C252C4900182643 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				1851EB462C252C6F00182643 /* OnboardingNavigator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		18FE25C12C257184008D02AB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18FE25C22C257194008D02AB /* Animation.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +219,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1851EB472C252C6F00182643 /* OnboardingNavigator.swift in Sources */,
 				1851EB2D2C244EC300182643 /* ContentView.swift in Sources */,
-				1851EB2B2C244EC300182643 /* _00_PushupsApp.swift in Sources */,
+				1851EB442C252B7C00182643 /* HomeView.swift in Sources */,
+				1851EB422C252B5D00182643 /* WelcomeView.swift in Sources */,
+				18FE25C32C257194008D02AB /* Animation.swift in Sources */,
+				1851EB2B2C244EC300182643 /* App.swift in Sources */,
+				18FE25C72C258AF7008D02AB /* SetUpProfileView.swift in Sources */,
+				18FE25C52C257A44008D02AB /* ChatBubble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,17 +357,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "100 Pushups/100 Pushups.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"100 Pushups/Preview Content\"";
 				DEVELOPMENT_TEAM = 3M6C8L4M5D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-00-Pushups-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "100 Pushups";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,17 +390,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "100 Pushups/100 Pushups.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"100 Pushups/Preview Content\"";
 				DEVELOPMENT_TEAM = 3M6C8L4M5D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-00-Pushups-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "100 Pushups";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

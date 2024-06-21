@@ -1,5 +1,5 @@
 //
-//  _00_PushupsApp.swift
+//  App.swift
 //  100 Pushups
 //
 //  Created by Tom Kwok on 6/20/24.

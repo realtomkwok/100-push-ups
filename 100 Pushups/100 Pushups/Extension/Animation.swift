@@ -7,12 +7,11 @@
 
 import SwiftUI
 
-struct Animation: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    Animation()
+extension Animation {
+	static func EaseOutQuint(duration: Double) -> Animation {
+		return Animation.timingCurve(0.22, 1, 0.36, 1, duration: duration)
+	}
+	static func EaseOutExpo(duration: Double) -> Animation {
+		return Animation.timingCurve(0.16, 1, 0.3, 1, duration: duration)
+	}
 }
