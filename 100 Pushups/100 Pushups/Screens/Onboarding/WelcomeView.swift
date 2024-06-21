@@ -25,20 +25,8 @@ struct WelcomeView: View {
     var body: some View {
 		VStack(alignment: .center, spacing: 24) {
 			VStack(alignment: .leading, spacing: 16) {
-				VStack(alignment: .leading, spacing: -8) {
-					Text(title)
-						.font(.system(size: 40))
-						.fontWidth(.expanded)
-						.fontWeight(.heavy)
-						.kerning(-1)
-					.foregroundStyle(.primary)
-					Text(subtitle)
-						.font(.system(size: 64))
-						.fontWidth(.expanded)
-						.fontWeight(.heavy)
-						.kerning(-2)
-						.foregroundStyle(.linearGradient(colors: [.grassGreen, .accentColor], startPoint: .leading, endPoint: .trailing))
-				}
+				OnboardingHeader(title: "Welcome to", subtitle: "100", subtitleSize: 64)
+				
 				Text(bodyText)
 					.font(.body)
 					.fontWidth(.expanded)

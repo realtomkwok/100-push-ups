@@ -10,8 +10,14 @@ import SwiftUI
 struct SetUpProfileView: View {
 	@Binding var currentSetupStep: Int
 	
+	var title: String = "Easy as"
+	var subtitle: String = "1-2-3"
+	
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+		VStack {
+			OnboardingHeader(title: "Easy as", subtitle: "1-2-3", subtitleSize: 64, icon: "trophy")
+		}
+		.padding()
     }
 }
 

@@ -18,6 +18,7 @@
 		18FE25C32C257194008D02AB /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25C22C257194008D02AB /* Animation.swift */; };
 		18FE25C52C257A44008D02AB /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25C42C257A44008D02AB /* ChatBubble.swift */; };
 		18FE25C72C258AF7008D02AB /* SetUpProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25C62C258AF7008D02AB /* SetUpProfileView.swift */; };
+		18FE25C92C2594E1008D02AB /* OnboardingHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25C82C2594E1008D02AB /* OnboardingHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		18FE25C22C257194008D02AB /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		18FE25C42C257A44008D02AB /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		18FE25C62C258AF7008D02AB /* SetUpProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpProfileView.swift; sourceTree = "<group>"; };
+		18FE25C82C2594E1008D02AB /* OnboardingHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingHeader.swift; path = Onboarding/OnboardingHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				1851EB3E2C252B0800182643 /* Common */,
+				18FE25C82C2594E1008D02AB /* OnboardingHeader.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				18FE25C32C257194008D02AB /* Animation.swift in Sources */,
 				1851EB2B2C244EC300182643 /* App.swift in Sources */,
 				18FE25C72C258AF7008D02AB /* SetUpProfileView.swift in Sources */,
+				18FE25C92C2594E1008D02AB /* OnboardingHeader.swift in Sources */,
 				18FE25C52C257A44008D02AB /* ChatBubble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
