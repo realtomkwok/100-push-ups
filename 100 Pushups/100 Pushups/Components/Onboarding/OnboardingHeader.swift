@@ -12,39 +12,53 @@ struct OnboardingHeader: View {
 	var title: String
 	var titleSize: CGFloat = 40
 	var titleForegroundStyle: any ShapeStyle = Color.primary
+	// Title 2
+	var title2: String
+	var title2Size: CGFloat = 40
+	var title2ForegroundStyle: any ShapeStyle = accentLinearGradient
 	// Subtitle
-	var subtitle: String
-	var subtitleSize: CGFloat = 40
-	var subtitleForegroundStyle: any ShapeStyle = .linearGradient(colors: [.grassGreen, .accentColor], startPoint: .leading, endPoint: .trailing)
-	// Others
+	var subtitle: String?
+	var subtitleFontWidth: Font.Width? = .expanded
+	// Icon
 	var icon: String?
-	var spacing: CGFloat = -4
+	var iconStyle: any ShapeStyle = Color.primary
+	@State private var showIcon: Bool = false
+	
 	
 	var body: some View {
-		VStack(alignment: .leading, spacing: 16) {
-			if let icon = icon {
-				Image(systemName: icon)
+		HStack {
+			VStack(alignment: .leading, spacing: 4) {
+				Image(systemName: icon ?? "")
 					.font(.system(size: titleSize))
 					.fontWeight(.bold)
+					.foregroundStyle(.accent)
+				VStack(alignment: .leading, spacing: -4) {
+					Text(title)
+						.font(.system(size: 40))
+						.fontWidth(.expanded)
+						.fontWeight(.heavy)
+						.kerning(-1)
+						.foregroundStyle(titleForegroundStyle)
+						
+					Text(title2)
+						.font(.system(size: title2Size))
+						.fontWidth(.expanded)
+						.fontWeight(.heavy)
+						.kerning(-1)
+						.foregroundStyle(title2ForegroundStyle)
+				}
+				Text(subtitle ?? "")
+					.font(.body)
+					.fontWidth(subtitleFontWidth)
+					.foregroundStyle(.primary)
+					.padding(.vertical)
 			}
-			VStack(alignment: .leading, spacing: spacing) {
-				Text(title)
-					.font(.system(size: 40))
-					.fontWidth(.expanded)
-					.fontWeight(.heavy)
-					.kerning(-1)
-					.foregroundStyle(titleForegroundStyle)
-				Text(subtitle)
-					.font(.system(size: subtitleSize))
-					.fontWidth(.expanded)
-					.fontWeight(.heavy)
-					.kerning(-1)
-					.foregroundStyle(subtitleForegroundStyle)
-			}
+			Spacer()
 		}
+		.padding()
 	}
 }
 
-#Preview {
-    OnboardingHeader(title: "Title", subtitle: "Subtitle", icon: "rosette")
+#Preview("Onboarding Header", traits: .sizeThatFitsLayout) {
+    OnboardingHeader(title: "Welcome to", title2: "100", subtitle: "Log, track and celebrate your commitment for 100 days.", icon: "rosette")
 }

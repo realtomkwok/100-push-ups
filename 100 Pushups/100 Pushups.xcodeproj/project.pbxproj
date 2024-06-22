@@ -15,10 +15,15 @@
 		1851EB422C252B5D00182643 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851EB412C252B5D00182643 /* WelcomeView.swift */; };
 		1851EB442C252B7C00182643 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851EB432C252B7C00182643 /* HomeView.swift */; };
 		1851EB472C252C6F00182643 /* OnboardingNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851EB462C252C6F00182643 /* OnboardingNavigator.swift */; };
-		18FE25C32C257194008D02AB /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25C22C257194008D02AB /* Animation.swift */; };
+		18FE25C32C257194008D02AB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25C22C257194008D02AB /* Extensions.swift */; };
 		18FE25C52C257A44008D02AB /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25C42C257A44008D02AB /* ChatBubble.swift */; };
-		18FE25C72C258AF7008D02AB /* SetUpProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25C62C258AF7008D02AB /* SetUpProfileView.swift */; };
+		18FE25C72C258AF7008D02AB /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25C62C258AF7008D02AB /* TutorialView.swift */; };
 		18FE25C92C2594E1008D02AB /* OnboardingHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25C82C2594E1008D02AB /* OnboardingHeader.swift */; };
+		18FE25CC2C259D16008D02AB /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25CB2C259D16008D02AB /* Gradient.swift */; };
+		18FE25CE2C259EF8008D02AB /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25CD2C259EF8008D02AB /* InformationView.swift */; };
+		18FE25D02C25AC44008D02AB /* SettingUpProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25CF2C25AC44008D02AB /* SettingUpProfile.swift */; };
+		18FE25D52C269713008D02AB /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25D42C269713008D02AB /* UserProfileModel.swift */; };
+		18FE25D72C26A89E008D02AB /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE25D62C26A89E008D02AB /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +38,15 @@
 		1851EB412C252B5D00182643 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		1851EB432C252B7C00182643 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1851EB462C252C6F00182643 /* OnboardingNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigator.swift; sourceTree = "<group>"; };
-		18FE25C22C257194008D02AB /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		18FE25C22C257194008D02AB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		18FE25C42C257A44008D02AB /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
-		18FE25C62C258AF7008D02AB /* SetUpProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpProfileView.swift; sourceTree = "<group>"; };
-		18FE25C82C2594E1008D02AB /* OnboardingHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingHeader.swift; path = Onboarding/OnboardingHeader.swift; sourceTree = "<group>"; };
+		18FE25C62C258AF7008D02AB /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		18FE25C82C2594E1008D02AB /* OnboardingHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingHeader.swift; sourceTree = "<group>"; };
+		18FE25CB2C259D16008D02AB /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		18FE25CD2C259EF8008D02AB /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		18FE25CF2C25AC44008D02AB /* SettingUpProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingUpProfile.swift; sourceTree = "<group>"; };
+		18FE25D42C269713008D02AB /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
+		18FE25D62C26A89E008D02AB /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +81,8 @@
 		1851EB292C244EC300182643 /* 100 Pushups */ = {
 			isa = PBXGroup;
 			children = (
-				18FE25C12C257184008D02AB /* Extension */,
+				18FE25D32C2696DB008D02AB /* Models */,
+				18FE25C12C257184008D02AB /* Utils */,
 				1851EB2A2C244EC300182643 /* App.swift */,
 				1851EB2C2C244EC300182643 /* ContentView.swift */,
 				1851EB452C252C4900182643 /* Navigation */,
@@ -104,8 +115,8 @@
 		1851EB3D2C252B0100182643 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				18FE25CA2C2599D0008D02AB /* Onboarding */,
 				1851EB3E2C252B0800182643 /* Common */,
-				18FE25C82C2594E1008D02AB /* OnboardingHeader.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -131,7 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				1851EB412C252B5D00182643 /* WelcomeView.swift */,
-				18FE25C62C258AF7008D02AB /* SetUpProfileView.swift */,
+				18FE25C62C258AF7008D02AB /* TutorialView.swift */,
+				18FE25CF2C25AC44008D02AB /* SettingUpProfile.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -144,12 +156,31 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		18FE25C12C257184008D02AB /* Extension */ = {
+		18FE25C12C257184008D02AB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				18FE25C22C257194008D02AB /* Animation.swift */,
+				18FE25C22C257194008D02AB /* Extensions.swift */,
+				18FE25CB2C259D16008D02AB /* Gradient.swift */,
+				18FE25D62C26A89E008D02AB /* Animation.swift */,
 			);
-			path = Extension;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		18FE25CA2C2599D0008D02AB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				18FE25CD2C259EF8008D02AB /* InformationView.swift */,
+				18FE25C82C2594E1008D02AB /* OnboardingHeader.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		18FE25D32C2696DB008D02AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18FE25D42C269713008D02AB /* UserProfileModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,13 +254,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1851EB472C252C6F00182643 /* OnboardingNavigator.swift in Sources */,
+				18FE25CE2C259EF8008D02AB /* InformationView.swift in Sources */,
 				1851EB2D2C244EC300182643 /* ContentView.swift in Sources */,
 				1851EB442C252B7C00182643 /* HomeView.swift in Sources */,
 				1851EB422C252B5D00182643 /* WelcomeView.swift in Sources */,
-				18FE25C32C257194008D02AB /* Animation.swift in Sources */,
+				18FE25C32C257194008D02AB /* Extensions.swift in Sources */,
+				18FE25D52C269713008D02AB /* UserProfileModel.swift in Sources */,
+				18FE25CC2C259D16008D02AB /* Gradient.swift in Sources */,
 				1851EB2B2C244EC300182643 /* App.swift in Sources */,
-				18FE25C72C258AF7008D02AB /* SetUpProfileView.swift in Sources */,
+				18FE25C72C258AF7008D02AB /* TutorialView.swift in Sources */,
+				18FE25D02C25AC44008D02AB /* SettingUpProfile.swift in Sources */,
 				18FE25C92C2594E1008D02AB /* OnboardingHeader.swift in Sources */,
+				18FE25D72C26A89E008D02AB /* Animation.swift in Sources */,
 				18FE25C52C257A44008D02AB /* ChatBubble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,7 +405,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "-00-Pushups-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "100 Pushups";
+				INFOPLIST_KEY_CFBundleDisplayName = 100;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -402,7 +438,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "-00-Pushups-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "100 Pushups";
+				INFOPLIST_KEY_CFBundleDisplayName = 100;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -18,21 +18,13 @@ struct WelcomeView: View {
 	@State private var iconXOffset: CGFloat = -48.0
 	
 	var title: String = "Welcome to"
-	var subtitle: String = "100"
-	var bodyText: String = "Log, track and celebrate your commitment for 100 days."
-	
-	
+	var title2: String = "100"
+	var subtitle: String = "Log, track and celebrate your commitment for 100 days."
+		
     var body: some View {
-		VStack(alignment: .center, spacing: 24) {
-			VStack(alignment: .leading, spacing: 16) {
-				OnboardingHeader(title: "Welcome to", subtitle: "100", subtitleSize: 64)
-				
-				Text(bodyText)
-					.font(.body)
-					.fontWidth(.expanded)
-					.fontWeight(.regular)
-					.foregroundStyle(.secondary)
-			}
+		VStack(alignment: .center) {
+			VStack(alignment: .leading) {
+				OnboardingHeader(title: title, title2: title2, title2Size: 64, subtitle: subtitle, subtitleFontWidth: .expanded)
 			.opacity(titleOpacity)
 			.scaleEffect(titleScale)
 			.offset(x: titleXOffset)
@@ -42,24 +34,22 @@ struct WelcomeView: View {
 					titleScale = 1.0
 					titleXOffset = 0.0
 				}
+			}
 		}
-			.padding()
 			
-			Button(action: {
-				currentSetupStep += 1
-			}) {
+			Button(action: {currentSetupStep += 1}) {
 				Image(systemName: "arrow.forward.circle.fill")
 					.font(.system(size: 64, weight: .semibold))
 					.foregroundStyle(.linearGradient(colors: [.grassGreen, .accentColor], startPoint: .leading, endPoint: .trailing))
 					.opacity(iconOpacity)
 					.offset(x: iconXOffset)
 					.onAppear {
-						withAnimation(.EaseOutExpo(duration: 2.0).delay(1.5)) {
+						withAnimation(.EaseOutExpo(duration: 2.0).delay(1.2)) {
 							iconOpacity = 1.0
 							iconXOffset = 0.0
 						}
 					}
-				// TODO: Animation of a button fadeing out and offesting to the right
+				// TODO: Animation of a button fading out and offsetting to the right
 			}
 			.padding()
 		}
