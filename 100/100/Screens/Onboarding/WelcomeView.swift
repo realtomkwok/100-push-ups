@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WelcomeView: View {
 	@Binding var currentSetupStep: Int
+	@State var onExit: Bool = false
 	
 	@State private var titleOpacity: Double = 0.0
 	@State private var titleScale: CGFloat = 0.5
@@ -37,7 +38,10 @@ struct WelcomeView: View {
 			}
 		}
 			
-			Button(action: {currentSetupStep += 1}) {
+			Button(action: {
+				currentSetupStep += 1
+				onExit = true
+			}) {
 				Image(systemName: "arrow.forward.circle.fill")
 					.font(.system(size: 64, weight: .semibold))
 					.foregroundStyle(.linearGradient(colors: [.grassGreen, .accentColor], startPoint: .leading, endPoint: .trailing))
@@ -49,8 +53,8 @@ struct WelcomeView: View {
 							iconXOffset = 0.0
 						}
 					}
-				// TODO: Animation of a button fading out and offsetting to the right
 			}
+			.disabled(onExit)
 			.padding()
 		}
     }

@@ -77,15 +77,17 @@ struct TutorialView: View {
 						.foregroundStyle(.background)
 						.background(.accent)
 				}
+				.disabled(onExit)
 				.opacity(buttonOpacity)
 				.offset(y: buttonYOffset)
 				.onAppear {
-					withAnimation(.EaseOutExpo(duration: exitAnimationConfig.durationSec).delay(4.0)) {
+					withAnimation(.EaseOutExpo(duration: 2.0).delay(4.0)) {
 						buttonOpacity = exitAnimationConfig.endOpacity
 						buttonYOffset = exitAnimationConfig.endYOffset
 					}
 				}
 			}
+			Spacer()
 		}
 		.onChange(of: onExit) {
 			if onExit {
@@ -105,12 +107,12 @@ struct TutorialView: View {
 					buttonYOffset = -288
 				}
 				
-				withAnimation(.EaseOutExpo(duration: 2.0).delay(1)){
+				withAnimation(.EaseOutExpo(duration: 2.0).delay(1.5)){
 					buttonOpacity = exitAnimationConfig.initOpacity
 					buttonBlurRadius = exitAnimationConfig.initBlurRadius
 				}
 				
-				DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+				DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
 					currentSetupStep += 1
 				}
 			}

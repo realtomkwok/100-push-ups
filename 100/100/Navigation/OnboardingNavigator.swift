@@ -25,6 +25,8 @@ struct OnboardingNavigator: View {
 				SettingUpProfile(currentSetupStep: $currentSetupStep)
 					.transition(.blurReplace(.upUp)
 						.animation(.smooth(duration: 1)))
+			} else if currentSetupStep == 3 {
+				Text("Step 4")
 			}
 		}
     }
